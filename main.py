@@ -7,8 +7,9 @@
 # from problems.MaxSubArray import MaxSubArray
 # from problems.SpiralMatrix import SpiralMatrix
 # from problems.MergeIntervals import MergeIntervals
-from problems.SpiralMatrix2 import SpiralMatrix2
+# from problems.SpiralMatrix2 import SpiralMatrix2
 # from problems.InsertInterval import InsertInterval
+from problems.TextJustification import TextJustification
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
@@ -175,6 +176,26 @@ if __name__ == '__main__':
 # print(inI.solveProblem(intervals,newInterval))
 
 # spiral matrix 2
-spM2 = SpiralMatrix2()
-spM2.solveProblem(3)
+# spM2 = SpiralMatrix2()
+# spM2.solveProblem(3)
+
+# Unique path 2
+up2 = TextJustification()
+
+words = ["What","must","be","acknowledgment","shall","be"]
+maxWidth = 16
+
+words = ["This", "is", "an", "example", "of", "text", "justification."]
+maxWidth = 16
+
+words = ["Science","is","what","we","understand","well","enough","to","explain","to","a","computer.","Art","is","everything","else","we","do"]
+maxWidth = 20
+
+words = ["ask","not","what","your","country","can","do","for","you","ask","what","you","can","do","for","your","country"]
+maxWidth = 16
+
+
+res = up2.solveProblem(words, maxWidth)
+print(list(map( lambda line : len(line),res)))
+print(up2.solveProblem(words, maxWidth))
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/

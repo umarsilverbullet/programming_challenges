@@ -1,2 +1,1 @@
-venv/*
-problems/__pycache
+problems/__pycache__/*
