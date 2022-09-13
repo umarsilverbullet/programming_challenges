@@ -9,7 +9,11 @@
 # from problems.MergeIntervals import MergeIntervals
 # from problems.SpiralMatrix2 import SpiralMatrix2
 # from problems.InsertInterval import InsertInterval
-from problems.TextJustification import TextJustification
+# from problems.TextJustification import TextJustification
+# from problems.SetMatrixZeroes import SetMatrixZeroes
+# from problems.Search2dMatrix import Search2dMatrix
+# from problems.SortColors import SortColors
+from problems.Subsets import Subsets
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
@@ -180,22 +184,49 @@ if __name__ == '__main__':
 # spM2.solveProblem(3)
 
 # Unique path 2
-up2 = TextJustification()
+# up2 = TextJustification()
+#
+# words = ["What","must","be","acknowledgment","shall","be"]
+# maxWidth = 16
+#
+# words = ["This", "is", "an", "example", "of", "text", "justification."]
+# maxWidth = 16
+#
+# words = ["Science","is","what","we","understand","well","enough","to","explain","to","a","computer.","Art","is","everything","else","we","do"]
+# maxWidth = 20
+#
+# words = ["ask","not","what","your","country","can","do","for","you","ask","what","you","can","do","for","your","country"]
+# maxWidth = 16
+#
+#
+# res = up2.solveProblem(words, maxWidth)
+# print(up2.solveProblem(words, maxWidth))
 
-words = ["What","must","be","acknowledgment","shall","be"]
-maxWidth = 16
+# set matrix zeroes
+# smz = SetMatrixZeroes()
+# matrix = [[1,1,1],[1,0,1],[1,1,1]]
+# matrix = [[0,1,2,0],[3,4,5,2],[1,3,1,5]]
+# smz.solveProblem(matrix)
+# print(matrix)
 
-words = ["This", "is", "an", "example", "of", "text", "justification."]
-maxWidth = 16
+# search in 2d matrix
+# searchMatrix = Search2dMatrix()
+# matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]]
+# target = 3
+# matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]]
+# target = 13
+# matrix = [[1,3]]
+# target = 3
+# print(f'Search => { searchMatrix.solveProblem(matrix, target) }')
 
-words = ["Science","is","what","we","understand","well","enough","to","explain","to","a","computer.","Art","is","everything","else","we","do"]
-maxWidth = 20
+# sc = SortColors()
+# nums = [2,0,1]
+# nums = [1,2,0]
+# sc.solveProblem(nums)
+# print(nums)
 
-words = ["ask","not","what","your","country","can","do","for","you","ask","what","you","can","do","for","your","country"]
-maxWidth = 16
-
-
-res = up2.solveProblem(words, maxWidth)
-print(list(map( lambda line : len(line),res)))
-print(up2.solveProblem(words, maxWidth))
+# Subsets
+nums = [1,2,3]
+ss = Subsets()
+print(ss.solveProblem(nums))
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
