@@ -1,0 +1,30 @@
+Expected Duration:	20min @6th Nov 2022 ____ IST - (___ AM GMT)
+Affected Data Centres:	UK
+Impacted Systems:	SilverBullet Service
+Notes:	This deployment includes changes / updates for
+-	Feature improvements of Service
+-	Bug fixes
+Jira Ticket
+        IAPPS-6521
+        IAPPS-6556
+        IAPPS-6041
+        IAPPS-6524
+        IAPPS-6539
+        IAPPS-6060
+        IAPPS-6023
+        IAPPS-6042
+        IAPPS-6022
+        IAPPS-5921
+        IAPPS-6021
+        IAPPS-6042
+        IAPPS-6492
+        IAPPS-5953
+        IAPPS-6020
+        IAPPS-5919
+        IAPPS-6513
+
+Release PRs     https://github.com/silverbullet-auto/service-storefront/pull/702
+                https://github.com/silverbullet-auto/api-workshop-manager/pull/114
+                https://github.com/silverbullet-auto/api-sab-manager/pull/18
+                https://github.com/silverbullet-auto/api-organisation-manager/pull/116
+                https://github.com/silverbullet-auto/api-package-manager/pull/30

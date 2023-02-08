@@ -18,24 +18,35 @@ class AddStrings:
         result = ''
         carry = 0
 
-        i=0
-        n1,n2 = num1,num2
-        while n1 and n2:
-            p1 = int(num1[-(i+1)])
-            p2 = int(num2[-(i+1)])
-            res = p1 + p2 + carry
+        lenNum1, lenNum2 = len(num1), len(num2)
+        p1,p2 = lenNum1-1,lenNum2-1
 
-            if res > 10:
+        while p1 >= 0 or p2 >= 0:
+            o1,o2 = 0,0
+
+            if p1 >= 0:
+                o1 = ord(num1[p1])-48
+                p1 -= 1
+
+            if p2 >= 0:
+                o2 = ord(num2[p2])-48
+                p2 -= 1
+
+
+            tmp = o1 + o2 + carry
+
+            if tmp > 9:
                 carry = 1
             else:
                 carry = 0
 
-            result = str(res) + result
-            n2 = num2[0:-(i+1)]
-            n1 = num1[0:-(i+1)]
-            i+=1
+            result = str(tmp)[-1] + result
 
-        if num1:
+        if carry:
+            result = str(carry) + result
 
         return result
+
+
+
 
