@@ -28,3 +28,14 @@ Release PRs     https://github.com/silverbullet-auto/service-storefront/pull/702
                 https://github.com/silverbullet-auto/api-sab-manager/pull/18
                 https://github.com/silverbullet-auto/api-organisation-manager/pull/116
                 https://github.com/silverbullet-auto/api-package-manager/pull/30
+
+=======================Observation==============================
+the situation can have two possiblities to occur
+1. Cold Start issue in Serverless machine
+2. Timeout.
+
+Mitigation Process
+1. Cold Start issue can be resolved in two ways
+    a. Create an Amazon CloudWatch Events Rule and schedule it to hit every minute to the target ===> Lambda function created for the service product.
+    b. Using Vapor , to increase the "warm" value.
+2. Timeout issue can be resolved by increasing the timeout at max value.
